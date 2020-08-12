@@ -126,17 +126,13 @@
                     <p class="text-center px-5">Our featured products are produced in small batches made with care and may run out of stock quickly.</p>
                     <button class="btn btn-primary d-block mx-auto">VISIT OUR SHOP</button>
 
-                </div>
-                
-                
-
-                
-                    
+                </div>  
               
             </div>
 
 
         </div>
+        
         <div class="row px-0">
             <div class="col">
                 <div class="img2"></div>

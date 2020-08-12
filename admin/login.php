@@ -16,7 +16,7 @@
          // Set admin login of the session to be true
          $_SESSION['ADMIN_LOGIN']='yes';
          $_SESSION['ADMIN_USERNAME']=$username;
-         header("location:../index.html");
+         header("location:../categories.php");
          die();
       }
       else{
