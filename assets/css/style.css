@@ -613,6 +613,12 @@ canvas {
 .order-table .badge-pending {
     background: #fb9678
 }
+.order-table .badge-delete {
+    background: red;
+}
+.order-table .badge-edit {
+    background: rgb(28, 106, 126);
+}
 
 .messenger-box {
     padding-top: 15px
@@ -1625,10 +1631,24 @@ header .form-inline .search-form.close {
 
 .card .box-title {
     font-weight: 600;
-    font-size: 1em;
+    font-size: 20px;
     padding: 5px 0
 }
 
+.card .box-link {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 0
+}
+
+.card .box-link a{
+    color:#000;
+    text-decoration:underline;
+}
+
+.badge a{
+    color:#fff;
+}
 .card .weather-title.box-title {
     padding: 0 15px;
     line-height: 50px;

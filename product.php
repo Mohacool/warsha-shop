@@ -14,19 +14,20 @@
                 $status='1';
             }
             
-            $update_status = "update categories set status='$status' where id='$id'";
+            $update_status = "update product set status='$status' where id='$id'";
             mysqli_query($con,$update_status);
         }
 
         if ($type=='delete'){
             $id=mysqli_real_escape_string($con, $_GET['id']);
-            $delete_sql = "delete from categories where id='$id'";
+            $delete_sql = "delete from product where id='$id'";
             mysqli_query($con,$delete_sql);
         }
     }
 
-    $sql = "select * from categories order by categories asc";
+    $sql = "select product.*,categories.categories from product,categories where product.categories_id = categories.id order by product.id desc";
     $query = mysqli_query($con,$sql);
+   
 
 ?>
 <div class="content pb-0">
@@ -35,9 +36,9 @@
          <div class="col-xl-12">
             <div class="card">
                <div class="card-body">
-                  <h4 class="box-title">Categories </h4>
+                  <h4 class="box-title">Products </h4>
                   <h4 class="box-link">
-                      <a href="manage_categories.php">Add Category</a>
+                      <a href="manage_products.php">Add Product</a>
                   </h4>
                </div>
                <div class="card-body--">
@@ -48,7 +49,11 @@
                               <th class="serial">#</th>
                               <th>ID</th>
                               <th>Category</th>
-                              <th>Status</th>
+                              <th>Name</th>
+                              <th>Image</th>
+                              <th>Price</th>
+                              <th>Quantity</th>
+                              <th></th>
                               
                            </tr>
                         </thead>
@@ -60,7 +65,13 @@
                            <tr>
                               <td class="serial"><?php echo $i ?></td>
                               <td><?php echo $row['id'] ?></td>
-                              <td><?php echo $row['categories'] ?></td>
+                              <td><?php echo $row['categories_id'] ?></td>
+                              <td><?php echo $row['name'] ?></td>
+                              <td>
+                                  <img src="media/products/<?php echo $row['image'] ?>">
+                              </td>
+                              <td><?php echo $row['price'] ?></td>
+                              <td><?php echo $row['qty'] ?></td>
                               <td>
                                   <?php 
 
@@ -84,7 +95,7 @@
                                     // Edit Button
                                     echo "
                                     <span class='badge badge-edit'>
-                                        <a href='manage_categories.php?id=".$row['id']."'>
+                                        <a href='manage_products.php?id=".$row['id']."'>
                                         Edit</a>
                                     </span>
                                     ";
