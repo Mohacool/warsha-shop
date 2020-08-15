@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Univers Condensed';
+    src: url('Univers-Condensed-Medium.eot');
+    src: url('Univers-Condensed-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Univers-Condensed-Medium.woff2') format('woff2'),
+        url('Univers-Condensed-Medium.woff') format('woff'),
+        url('Univers-Condensed-Medium.ttf') format('truetype'),
+        url('Univers-Condensed-Medium.svg#Univers-Condensed-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

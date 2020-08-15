@@ -17,6 +17,9 @@
     <!-- Sweet Alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
+    <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+
+
     <!-- Import my style sheet -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -111,10 +114,17 @@
     
     <div class="container-fluid px-0 pad">
 
-        <div class="row px-0">
+        <!-- <div class="row px-0">
             <div class="col">
                 <div class="img"></div>
             </div>
+        </div> -->
+        <!-- First Parallax Section -->
+        <div class="jumbotron paral paralsec">
+            
+            <!-- <p class="lead pb-0 mb-0">Our Mission</p>
+            <h1 class="display-3 pt-0 mt-0">PROVIDE LOCAL HANDMADE PRODUCTS</h1>
+            -->
         </div>
 
         <div class="card mycard px-3">
@@ -122,9 +132,10 @@
             <div class="row align-items-center divider">
 
                 <div class="col">
-                    <h4 class="text-center">MORE PRODUCTS ADDED CONSTANTLY</h4>
-                    <p class="text-center px-5">Our featured products are produced in small batches made with care and may run out of stock quickly.</p>
-                    <button class="btn btn-primary d-block mx-auto">VISIT OUR SHOP</button>
+
+                    <h4 class="text-center pb-4">MORE PRODUCTS ADDED CONSTANTLY</h4>
+                    <p class="text-center paragraph pb-2">Our featured products are produced in small batches made with care and may run out of stock quickly.</p>
+                    <button class="btn btn-primary d-block mx-auto visit">VISIT OUR SHOP</button>
 
                 </div>  
               
@@ -133,20 +144,59 @@
 
         </div>
         
-        <div class="row px-0">
+        <!-- <div class="row px-0">
             <div class="col">
-                <div class="img2"></div>
+
+                 <div class="img2">
+                
+
+                </div>
+                
             </div>
-        </div>
-        
+        </div> -->
+
+
+        <div class="jumbotron paral paralsec2">
+            <br class="pb-5"><br class="pb-5"><br class="pb-5">
+            <p class="lead pt-5 pb-0 mb-0" style="font-size:10px;letter-spacing:2px;">OUR MISSION</p>
+            <h1 class="display-3 pt-0 mt-0 parallax_head">PROVIDE LOCAL, HAND-MADE PRODUCTS</h1>
            
+        </div>
+        <!-- <div class="col foot">
+                <div class="row- align-items-center">
+                    <h4 class="d-block mx-auto">WARSHA.SHOP</h4>
+                </div>
+            </div> -->
+        <div class="row foot px-0">
+            <div class="col offset-4"></div>
+            <div class="col-4 show">
+                <div class="row h-50">
+                    <h4 class="d-block mx-auto my-auto">WARSHA.SHOP</h4>
+                </div>
+                <div class="row h-50">
+                     
+                    <div class="col">
+                        
+                        <div class="row icons_row align-items-center">
+                            <div class="icons mx-auto">
+                                <img class="foot_icons px-0 mr-1" src="https://img.icons8.com/android/24/000000/facebook.png" width="17px" style="object-fit:contain;">
+                                <img class="foot_icons px-0 ml-1" src="https://img.icons8.com/metro/26/000000/instagram-new.png" width="19px" style="object-fit:contain;">
+                            </div>  
+                        </div>
+                        
+
+                        
+                    </div>
+                    
+                   
+                    
+                    
+                </div>
+                
+            </div>
+            <div class="col offset-4"></div>
             
-        
-        
-
-        
-
-        
+        </div>
         
     
     </div>

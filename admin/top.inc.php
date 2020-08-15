@@ -1,5 +1,5 @@
 <?php 
-    require('config/connection.php');
+    require('../config/connection.php');
     if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN'] != ''){
 
     }
@@ -17,14 +17,14 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <title>Dashboard Page</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="assets/css/normalize.css">
-      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-      <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-      <link rel="stylesheet" href="assets/css/themify-icons.css">
-      <link rel="stylesheet" href="assets/css/pe-icon-7-filled.css">
-      <link rel="stylesheet" href="assets/css/flag-icon.min.css">
-      <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
-      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="../assets/css/normalize.css">
+      <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+      <link rel="stylesheet" href="../assets/css/themify-icons.css">
+      <link rel="stylesheet" href="../assets/css/pe-icon-7-filled.css">
+      <link rel="stylesheet" href="../assets/css/flag-icon.min.css">
+      <link rel="stylesheet" href="../assets/css/cs-skin-elastic.css">
+      <link rel="stylesheet" href="../assets/css/style.css">
       <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
    </head>
    <body>
@@ -34,21 +34,15 @@
                <ul class="nav navbar-nav">
                   <li class="menu-title">Menu</li>
                   <li class="menu-item-has-children dropdown">
-                     <a href="categories.php" > Categories Master</a>
+                     <a href="categories.php" > Categories</a>
                   </li>
                   <li class="menu-item-has-children dropdown">
-                     <a href="product.php" > Product Master</a>
+                     <a href="product.php" > Products</a>
                   </li>
 				  <li class="menu-item-has-children dropdown">
-                     <a href="#" > Order Master</a>
+                     <a href="#" > Orders</a>
                   </li>
-                  <li class="menu-item-has-children dropdown">
-                     <a href="#" > User Master</a>
-                  </li>
-                  <li class="menu-item-has-children dropdown">
-                     <a href="#" > Contact US</a>
-                  </li>
-
+                  
                </ul>
             </div>
          </nav>
@@ -57,8 +51,7 @@
          <header id="header" class="header">
             <div class="top-left">
                <div class="navbar-header">
-                  <a class="navbar-brand" href="index.html"><img src="logo.png" alt="Logo"></a>
-                  <a class="navbar-brand hidden" href="index.html"><img src="images/logo2.png" alt="Logo"></a>
+                  <a class="navbar-brand" href="index.html"><img src="../logo.png" alt="Logo"></a>
                   <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                </div>
             </div>

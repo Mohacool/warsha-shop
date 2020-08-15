@@ -37,6 +37,7 @@
             $description=$row['description'];
             $price=$row['price'];
             $qty=$row['qty'];
+            echo "<script>alert('got here');</script>";
         }
         // If id doesn't exist (product exists)
         else{
@@ -46,17 +47,22 @@
 
         
     }
+    echo "<script>alert('got here 2');</script>";
 
     // CLICK SUBMIT BUTTON
     if (isset($_POST['submit'])){
+        echo "<script>alert('heloooo');</script>";
 
 
         $categories_id = mysqli_real_escape_string($con, $_POST['categories_id']);
         $name = mysqli_real_escape_string($con, $_POST['name']);
         $price = mysqli_real_escape_string($con, $_POST['price']);
         $qty = mysqli_real_escape_string($con, $_POST['qty']);
+        
         $image = mysqli_real_escape_string($con, $_POST['image']);
         $description = mysqli_real_escape_string($con, $_POST['description']);
+
+        echo "<script>alert('$image');</script>";
 
         // Check to see if category already exists
         $sql = "select * from product where name='$name'";
@@ -68,6 +74,7 @@
             if (isset($_GET['id']) && $_GET['id']!=''){
                 $getData=mysqli_fetch_assoc($query);
                 if ($id=$getData['id']){
+
 
                 }
                 else{
@@ -81,14 +88,26 @@
             
         }
         
-        if ($msg=''){
+        if ($msg==''){
 
             if (isset($_GET['id']) && $_GET['id']!=''){
                 // --------- EDIT ----------
 
                 if ($_FILES['image']['name']!=''){
+
+                    echo "<script>console.log('update 1');</script>";
+                    
                     $image=rand(111111111,9999999999).'_'.$_FILES['image']['name'];
-                    move_uploaded_file($_FILES['image']['tmp_name'],'media/products/'.$image);
+                    move_uploaded_file($_FILES['image']['tmp_name'],'../media/products/'.$image);
+
+                    
+
+                    $update_sql = "update product set categories_id='$categories_id',name='$name'
+                    image='$image',qty='$qty',price='$price',description='$description'
+                    where id ='$id'";
+                }
+                else{
+                    echo "<script>alert('update 2');</script>";
 
                     $update_sql = "update product set categories_id='$categories_id',name='$name'
                     image='$image',qty='$qty',price='$price',description='$description'
@@ -102,7 +121,7 @@
             else{
                 // --------- INSERT ----------
                 $image=rand(111111111,9999999999).'_'.$_FILES['image']['name'];
-                move_uploaded_file($_FILES['image']['tmp_name'],'media/products/'.$image);
+                move_uploaded_file($_FILES['image']['tmp_name'],'../media/products/'.$image);
 
                 $sql = "insert into product (categories_id,name,image,qty,price,description) 
                 values ('$categories_id','$name','$image','$qty','$price','$description')";
@@ -124,7 +143,7 @@
                      <div class="card">
                         <div class="card-header"><strong>Product</strong><small> Form</small></div>
                         
-                            <form method="post" enctype="multipart/form-data">
+                            <form method="post" action="manage_products.php" enctype="multipart/form-data">
                                 <div class="card-body card-block">
 
                                     <!-- Category Drop Down Menu -->

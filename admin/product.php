@@ -68,7 +68,7 @@
                               <td><?php echo $row['categories_id'] ?></td>
                               <td><?php echo $row['name'] ?></td>
                               <td>
-                                  <img src="media/products/<?php echo $row['image'] ?>">
+                                  <img src="../media/products/<?php echo $row['image'] ?>">
                               </td>
                               <td><?php echo $row['price'] ?></td>
                               <td><?php echo $row['qty'] ?></td>
@@ -92,13 +92,16 @@
                                         </span>
                                         ";
                                     }
+
                                     // Edit Button
-                                    echo "
-                                    <span class='badge badge-edit'>
-                                        <a href='manage_products.php?id=".$row['id']."'>
-                                        Edit</a>
-                                    </span>
-                                    ";
+
+                                    // Removed until edit is fixed
+                                    // echo "
+                                    // <span class='badge badge-edit'>
+                                    //     <a href='manage_products.php?id=".$row['id']."'>
+                                    //     Edit</a>
+                                    // </span>
+                                    // ";
                                     
                                     // Delete Button
                                     echo "
