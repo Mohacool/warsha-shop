@@ -26,6 +26,10 @@ body{
 
 
 
+
+
+
+
 .foot_icons{
     cursor:pointer;
     opacity:0.5;
@@ -68,7 +72,6 @@ body{
     height:80px;
     z-index:1000;
     background-color:white !important;
-    /* border: 1px solid green; */
     
 }
 
@@ -236,7 +239,7 @@ h4{
     .desktop_navbar{
         display:flex;
         height:150px;
-        z-index:-100;
+        /* z-index:-100; */
         
     }
     .pad{
@@ -281,21 +284,7 @@ h4{
     
 
     
-    
-    
-    .badge{
-        cursor:default;
-    }
-    
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -317,17 +306,7 @@ h4{
 
 
 /* ------------------ (START) Navigation Bar Collapse --------------------*/
-.navbar-collapse {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    width: 100%;
-    height: 100%;
-    background-color:white !important;
-}
+
 
 .navbar-brand {
     transform: translateX(-50%);
@@ -340,8 +319,6 @@ h4{
     cursor:pointer;
     position:absolute;
     right:0;
-    
-
 }
 .mybutton:focus{
     border:0px  !important;
@@ -354,6 +331,17 @@ h4{
     padding-bottom:2px;
 }
 
+.navbar-collapse {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: 100%;
+    background-color:white !important;
+}
 .navbar-collapse.collapsing {
     left: -100%;
     transition: height 100ms ease-in;  
@@ -367,4 +355,6 @@ h4{
 .navbar-toggler.collapsed ~ .navbar-collapse {
     transition: left 300ms ease-in-out;
 }
+
+
 /* ------------------ (END) Navigation Bar Collapse --------------------*/
