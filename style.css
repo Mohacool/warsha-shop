@@ -16,6 +16,23 @@ body{
     font-display: swap;
 }
 
+@font-face {
+    font-family:"Source Sans Pro";
+    src: url("fonts/SourceSansPro-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family:"Source Sans Pro regular";
+    src: url("fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family:"Source Sans Pro semibold";
+    src: url("fonts/SourceSansPro-SemiBold.ttf") format("truetype");
+}
+
+
+.contact{
+    font-family:'Source Sans Pro semibold' !important;
+}
 
 .nav_items_text{
     font-family: 'Franklin Gothic Medium' !important;
@@ -23,10 +40,6 @@ body{
     letter-spacing: 3px;
     
 }
-
-
-
-
 
 
 
@@ -151,14 +164,42 @@ body{
     height:600px;
 }
 
+.textbox{
+    padding-left:23px;
+    font-family:'Source Sans Pro';
+    font-size:15px;
+}
+
+
+.ktw{
+    font-family:'Source Sans Pro semibold';
+    white-space: pre-wrap;
+    font-style:italic;
+
+}
+.price{
+    font-family:'Source Sans Pro semibold';
+    color:gray;
+}
+
 h4{
     font-family: 'Univers Condensed'; font-weight: 500; font-style: normal;
     font-size:25px;
 }
+
+
+h3{
+    font-family: 'Univers Condensed'; font-weight: 500; font-style: normal;
+    font-size:30px;
+}
+
+
+
 .button_text{
     font-size:10px;
     font-weight:400;
 }
+
 
 
 .visit{
@@ -181,6 +222,55 @@ h4{
     color:white !important;
     transition:ease 0.25s;
 }
+.add_to_cart{
+    padding-top:7px !important;
+    padding-bottom:7px !important;
+    padding-right:60px !important;
+    padding-left:60px !important;
+    border:2px solid rgb(82, 80, 80) !important;
+}
+
+.my_submit{
+    padding-top:7px !important;
+    padding-bottom:7px !important;
+    padding-right:40px !important;
+    padding-left:40px !important;
+    border:2px solid rgb(82, 80, 80) !important;
+}
+.my_submit:hover .sub{
+    color:white !important;
+
+}
+.add_to_cart:hover{
+    background-color:white !important;
+}
+
+.top_padding{
+    margin-top:50px;
+}
+
+.my-form{
+    
+}
+
+input, textarea{
+    background-color:rgba(204, 200, 200, 0.1) !important;
+    color: #FFF;
+    border-radius:2px !important;
+}
+
+.form-control:focus{
+    border-color: black; 
+    border-width:2px;
+    border-radius:5px; 
+    box-shadow: none; 
+    -webkit-box-shadow: none;
+} 
+.has-error .form-control:focus{
+    box-shadow: none; 
+    -webkit-box-shadow: none;
+}
+
 
 
 /* .row{
@@ -215,11 +305,44 @@ h4{
     border-radius:0% !important;
 }
 
+.mymobilep{
+    display:none;
+}
+
+.desktop_name{
+    display:none;
+}
+
+/* smartphones, touchscreens */
+@media (hover: none) and (pointer: coarse) {
+    .over{
+        display:none;
+    }
+    .mymobilep{
+        display:block;
+    }
+
+}
 
 
 /* BIGGER THAN MOBILE */
 @media only screen and (min-width:640px){
 
+    .form_container{
+        width:50%;
+    }
+    .top_padding{
+        margin-top:80px;
+    }
+    .mobile_name{
+        display:none;
+    }
+    .desktop_name{
+        display:block;
+    }
+    .img_holder{
+        padding-right:50px !important;
+    }
     .foot{
         height:250px;
     }
@@ -329,6 +452,10 @@ h4{
    
     padding-top:2px;
     padding-bottom:2px;
+}
+
+a:hover{
+    text-decoration:none;
 }
 
 .navbar-collapse {

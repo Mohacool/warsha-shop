@@ -1,0 +1,70 @@
+
+.myp{
+    width:100%;
+    position:absolute;
+    text-align:center;
+    opacity:0;
+    font-size:17px;
+    transition: 0.25s ease;
+    font-family: 'Univers Condensed';
+    color:gray;
+ }
+
+ .mymobilep{
+    font-family: 'Univers Condensed';
+    font-size:15px;
+    color:gray;
+ }
+ 
+.over{
+    cursor:pointer;
+    background-color:#f3f0ef !important;
+    opacity: 0;
+    width:100% !important;
+    height:100% !important;
+    position:absolute;
+}
+
+.over:hover{
+    opacity: 1;
+    transition: 0.25s ease;
+}
+
+.over:hover .myp{
+    opacity:1;
+    transition:ease 0.5s;
+}
+
+
+/* .show{
+    border:1px solid orange !important;
+}
+.col{
+    border:3px solid orange !important;
+}
+.row{
+    border:1px solid blue !important;
+} */
+
+
+
+.nopadding {
+    padding: 0 !important;
+ }
+.nomargin{
+    margin: 0 !important;
+}
+
+ @font-face {
+    font-family: 'Univers Condensed';
+    src: url('fonts/Univers-Condensed-Medium.eot');
+    src: url('fonts/Univers-Condensed-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Univers-Condensed-Medium.woff2') format('woff2'),
+        url('fonts/Univers-Condensed-Medium.woff') format('woff'),
+        url('fonts/Univers-Condensed-Medium.ttf') format('truetype'),
+        url('fonts/Univers-Condensed-Medium.svg#Univers-Condensed-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+ 

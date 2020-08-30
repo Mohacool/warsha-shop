@@ -13,6 +13,8 @@
     if (isset($_GET['product_id']) && $_GET['product_id']!=''){
         $show_squares=false;
     }
+
+    header('Cache-Control: no cache'); //disable validation of form by the browser
     
 
 

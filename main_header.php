@@ -59,7 +59,7 @@
         
         <a class="cart" href="#" style="float:right;">
             <img src="https://img.icons8.com/cotton/64/000000/shopping-cart--v2.png" width="28px" style="cursor:pointer;">
-            <span class="badge badge-secondary cart_badge">1</span>
+            <span class="badge badge-secondary cart_badge">0</span>
         </a>
 
         <div class="container-fluid desktop_items">
@@ -72,12 +72,10 @@
                 <a class="menu_item px-2" href="grid.php">
                     <h6 >PRODUCTS</h6>
                 </a>
-                <a class="menu_item px-2" href="#">
+                <a class="menu_item px-2" href="contact.php">
                     <h6 >CONTACT</h6>
                 </a>
-                <a class="menu_item px-2" href="#">
-                    <h6 >FOLLOW</h6>
-                </a>
+                
                 
                 
                 

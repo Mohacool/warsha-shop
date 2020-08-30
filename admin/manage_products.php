@@ -60,7 +60,7 @@
         $qty = mysqli_real_escape_string($con, $_POST['qty']);
         
         $image = mysqli_real_escape_string($con, $_POST['image']);
-        $description = mysqli_real_escape_string($con, $_POST['description']);
+        $description = nl2br(mysqli_real_escape_string($con, $_POST['description']));
 
         echo "<script>alert('$image');</script>";
 
