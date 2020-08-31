@@ -1,6 +1,6 @@
 <?php
 $from = "sendermeail@yourprovider.com";
-$to = "moha.salama@mail.utoronto.ca";
+$to = "msalama2007@hotmail.com";
 $subject = "Simple test for mail function";
 $message = "This is a test to check if php mail function sends out the email";
 $headers = "From:" . $from;
