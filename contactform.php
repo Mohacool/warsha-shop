@@ -1,8 +1,8 @@
 <?php
 $from = "sendermeail@yourprovider.com";
-$to = "msalama2007@hotmail.com";
+$to = "omars@block94.com";
 $subject = "Simple test for mail function";
-$message = "This is a test to check if php mail function sends out the email";
+$message = "This is a test to check if php mail function sends out the email -mohamed (your brother)";
 $headers = "From:" . $from;
 if (mail($to, $subject, $body, $header)) {
    echo("
