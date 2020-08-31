@@ -44,6 +44,14 @@ $media_url = 'media/products/';
                         $item_name = $row['name'];
                         $id = $row['id'];
 
+                        if(strpos($item_name,'<br>')!== false){
+                            // echo "not found new line";
+                        }
+                        else{
+                            // echo "added newline";
+                            $item_name .= "<br><br>";
+                        }
+
                         echo "
                         <div class='col-lg-4 col-sm-6 d-flex pb-4 px-3' style='align-items:center'>
 
