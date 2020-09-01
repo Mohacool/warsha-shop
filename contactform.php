@@ -1,16 +1,20 @@
-<?php
-$from = "sendermeail@yourprovider.com";
-$to = "omars@block94.com";
-$subject = "Simple test for mail function";
-$message = "This is a test to check if php mail function sends out the email -mohamed (your brother)";
-$headers = "From:" . $from;
-if (mail($to, $subject, $body, $header)) {
-   echo("
-      Message successfully sent!
-   ");
-} else {
-   echo("
-      Message delivery failed...
-   ");
+<?php 
+
+if (isset($_POST['submit'])) {
+    echo "submit pressed";
+    $name = $_POST['name'];
+    $subject = $_POST['subject'];
+    $mailFrom = $_POST['mail'];
+    $message = $_POST['message'];
+
+    $mailTo = "moha.salama@mail.utoronto.ca";
+    $headers = "From: WarshaShop".$mailFrom;
+    $txt = "You have recieved an email from ".$name.".\n\n".$message;
+
+    mail($mailTo,$subject,$txt,$headers);
+
+    header("Location: contact.php?mailsent");
+
 }
+
 ?>

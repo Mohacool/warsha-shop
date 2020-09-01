@@ -1,5 +1,6 @@
 <?php 
 require('config/connection.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,7 +63,16 @@ require('config/connection.php');
 
             <div class="row">
             <button class='mx-auto btn btn-primary d-block visit my_submit' type='submit' name='submit'>
-                <p class="my-auto sub" style="font-family:Source Sans Pro regular;font-size:17px;color:black;">SUBMIT</p>
+                <?php 
+                    if (isset($_GET['mailsent'])){
+                        $submit = "MESSAGE SENT!";
+                    }
+                    else{
+                        $submit = "SUBMIT";
+                    }
+                    
+                ?>
+                <p class="my-auto sub" style="font-family:Source Sans Pro regular;font-size:17px;color:black;"><?php echo $submit ?></p>
             </button>
 
             </div>

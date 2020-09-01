@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My main page</title>
+    <title>Warsha Shop</title>
 
     <!-- Import Bootstrap,Jquery... -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -46,7 +46,11 @@
 
                     <h4 class="text-center pb-4">MORE PRODUCTS ADDED CONSTANTLY</h4>
                     <p class="text-center paragraph pb-2">Our featured products are produced in small batches made with care and may run out of stock quickly.</p>
+                    
+                    <a href="grid.php">
+                    
                     <button class="btn btn-primary d-block mx-auto visit">VISIT OUR SHOP</button>
+                    </a>
 
                 </div>  
               
@@ -60,7 +64,7 @@
         <div class="jumbotron paral paralsec2">
             <br class="pb-5"><br class="pb-5"><br class="pb-5">
             <p class="lead pt-5 pb-0 mb-0" style="font-size:10px;letter-spacing:2px;">OUR MISSION</p>
-            <h1 class="display-3 pt-0 mt-0 parallax_head">PROVIDE LOCAL, HAND-MADE PRODUCTS</h1>
+            <h1 class="display-3 pt-0 mt-0 parallax_head local">PROVIDE LOCAL, HAND-MADE PRODUCTS</h1>
            
         </div>
         
