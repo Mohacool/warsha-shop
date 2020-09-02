@@ -50,11 +50,11 @@ if (isset($_GET['id']) && $_GET['id'] != ''){
         
     }
     else{
-        header('location:grid.php');
+        header('location:grid');
     }  
 }
 else{
-    header('location:grid.php');
+    header('location:grid');
 }
 ?>
 <!DOCTYPE html>
@@ -62,7 +62,8 @@ else{
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHANGE THIS </title>
+    <title><?php echo str_replace("<br>","",ucwords(strtolower($name))) ?></title>
+    
     <!-- Import Bootstrap,Jquery... -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script

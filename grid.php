@@ -55,7 +55,7 @@ $media_url = 'media/products/';
                         echo "
                         <div class='col-lg-4 col-sm-6 d-flex pb-4 px-3' style='align-items:center'>
 
-                            <a href='product_page.php?id=$id'>
+                            <a href='product_page?id=$id'>
                             <div class='col nopadding nomargin'>
         
                                 <div class='over'>
