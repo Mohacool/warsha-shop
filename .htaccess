@@ -6,7 +6,6 @@ RewriteRule ^([^\.]+)$ $1.php [NC,L]
 RewriteRule ^product/([a-zA-Z0-9\-=&_@\.\,\)\(]*)$ /warsha-shop/product_page.php?id=$1 [NC,L]
 
 
-RewriteRule ^products /warsha-shop/grid [NC,L]
 
 
 RewriteCond %{REQUEST_URI}::$1 ^(/.+)/(.*)::\2$
