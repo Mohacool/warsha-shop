@@ -5,7 +5,7 @@
     <!-- Mobile Nav -->
     <nav class="navbar navbar-expand-lg navbar-light mobile_navbar sticky-top">
 
-        <a class="navbar-brand" href="main.php">
+        <a class="navbar-brand" href="main">
             <img src="logo.png" width="85px">
         </a>
 
@@ -17,13 +17,13 @@
         <div class="collapse navbar-collapse pt-4" id="navbarResponsive" >
             <ul class="navbar-nav">
                 <li class="nav-item" >
-                    <a class="nav-link nav_items_text pl-4" href="aboutus.php">About Us</a>
+                    <a class="nav-link nav_items_text pl-4" href="aboutus">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav_items_text pl-4" href="grid.php">Products</a>
+                    <a class="nav-link nav_items_text pl-4" href="grid">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav_items_text pl-4" href="contact.php">Contact</a>
+                    <a class="nav-link nav_items_text pl-4" href="contact">Contact</a>
                 </li>
                 <li class="nav-item">
                     
@@ -48,7 +48,7 @@
     <div>
         <nav class="navbar navbar-expand-lg navbar-light desktop_navbar mt-5">
 
-            <a class="navbar-brand my-auto mx-auto" href="main.php">
+            <a class="navbar-brand my-auto mx-auto" href="main">
                 <img src="logo.png" width="340px">
             </a>
             
@@ -57,7 +57,7 @@
             
         </nav>
         
-        <a class="mycart" href="shoppingcart.php" style="float:right;">
+        <a class="mycart" href="shoppingcart" style="float:right;">
             <img style="z-index:9999" src="https://img.icons8.com/cotton/64/000000/shopping-cart--v2.png" width="28px">
             <span style="z-index:10000"class="badge badge-secondary cart_badge">0</span>
         </a>
@@ -66,13 +66,13 @@
 
             <div class="row mx-auto d-flex justify-content-center" style="width:450px;">
                 
-                <a class="menu_item px-2" href="aboutus.php">
+                <a class="menu_item px-2" href="aboutus">
                     <h6 >ABOUT US</h6>
                 </a>
-                <a class="menu_item px-2" href="grid.php">
+                <a class="menu_item px-2" href="grid">
                     <h6 >PRODUCTS</h6>
                 </a>
-                <a class="menu_item px-2" href="contact.php">
+                <a class="menu_item px-2" href="contact">
                     <h6 >CONTACT</h6>
                 </a>
                 
