@@ -24,4 +24,12 @@ RewriteRule .? - [L]
 
 RewriteRule .? %{ENV:BASE}/welcome.php [L]
 
+<IfModule mod_security.c>
+
+SecFilterEngine Off
+
+SecFilterScanPOST Off
+
+</IfModule>
+
 
