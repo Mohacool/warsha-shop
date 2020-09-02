@@ -5,7 +5,7 @@
     <!-- Mobile Nav -->
     <nav class="navbar navbar-expand-lg navbar-light mobile_navbar sticky-top">
 
-        <a class="navbar-brand" href="welcome">
+        <a class="navbar-brand" href="./">
             <img src="logo.png" width="85px">
         </a>
 
@@ -48,7 +48,7 @@
     <div>
         <nav class="navbar navbar-expand-lg navbar-light desktop_navbar mt-5">
 
-            <a class="navbar-brand my-auto mx-auto" href="welcome">
+            <a class="navbar-brand my-auto mx-auto" href="./">
                 <img src="logo.png" width="340px">
             </a>
             
