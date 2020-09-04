@@ -39,7 +39,7 @@
         
         <h3 class="px-4 pb-3 pt-5" style="font-size:24px;white-space: nowrap;">SHOPPING CART</h3>
         
-        <p class="px-4 description">You have nothing in your shopping cart. <a href="grid.php">Continue Shopping</a></p>
+        <p class="px-4 description">You have nothing in your shopping cart. <a href="products">Continue Shopping</a></p>
 
     </div>
 
