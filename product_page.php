@@ -46,7 +46,14 @@ if (isset($_GET['id']) && $_GET['id'] != ''){
         $description = bold_ingredients($description);
         $image = $row['image'];
         $extra_images = explode(",",$row['extra_images']);
-        
+        if(empty($extra_images)){
+            echo "empty";
+        }
+        else{
+            echo "not";
+        }
+        print_r($extra_images);
+   
         
     }
     else{
@@ -90,6 +97,7 @@ else{
             <div class="col-sm-12 col-md-7 order-md-3 show img_holder">
                 <img class="px-0 pb-3" src="<?php echo $img_location . "" . $image; ?>" alt="" width="100%">
                 <?php 
+                    
                     foreach ( $extra_images as $extra_img ){
                     $img_url = $img_location . "" . $extra_img;
                     echo  "<img class='px-0 py-3' src='$img_url' width='100%'>";
