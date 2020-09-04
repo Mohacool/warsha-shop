@@ -1,4 +1,4 @@
 # The Warsha Shop (ONLINE STORE)
 
-thewarshashop.com
+http://thewarshashop.com
 
