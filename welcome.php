@@ -49,7 +49,7 @@
                     <h4 class="text-center pb-4">MORE PRODUCTS ADDED CONSTANTLY</h4>
                     <p class="text-center paragraph pb-2">Our featured products are produced in small batches made with care and may run out of stock quickly.</p>
                     
-                    <a href="grid.php">
+                    <a href="products">
                     
                     <button class="btn btn-primary d-block mx-auto visit">VISIT OUR SHOP</button>
                     </a>
